@@ -13,7 +13,7 @@ return new class extends Migration
     {
     Schema::create('journals', function (Blueprint $table) {
         $table->id();
-        $table->string('juduljurnal');
+        $table->string('judul');
         $table->string('namapenulis1');
         $table->text('ringkasanjurnal');
         $table->string('linkaksesjurnal');

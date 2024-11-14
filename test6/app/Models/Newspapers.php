@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Newspapers extends Model
 {
     use HasFactory;
 
@@ -15,10 +15,11 @@ class Product extends Model
      * @var array
      */
     protected $fillable = [
-        'image',
-        'title',
-        'description',
-        'price',
+        'judul',
+        'namapenerbit',
+        'namapenulis',
+        'deskripsi',
+        'tahunterbit',
         'stock',
     ];
 

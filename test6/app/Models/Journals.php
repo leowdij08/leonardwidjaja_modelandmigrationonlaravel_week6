@@ -21,4 +21,7 @@ class Journals extends Model
         'linkaksesjurnal',
         'tahunterbit',
     ];
+
+    public $timestamps = false;
+    public $updated_at = false;
 }

@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CatalogController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route utama yang mengarah ke halaman katalog
+Route::get('/', [CatalogController::class, 'index'])->name('home');
 
-//route resource for products
-Route::resource('/products', \App\Http\Controllers\ProductController::class);
+// Route katalog (halaman publik untuk melihat daftar buku, CD, dll.)
+Route::get('/catalog', [CatalogController::class, 'index'])->name('catalog.index');
+
